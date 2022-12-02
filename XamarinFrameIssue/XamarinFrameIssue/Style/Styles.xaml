@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<?xaml-comp compile="true" ?>
+<ResourceDictionary 
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <Style TargetType="Frame">
+        <Setter Property="HasShadow" Value="False" />
+        <Setter Property="CornerRadius" Value="16" />
+    </Style>
+    
+    <Style TargetType="Label">
+        <Setter Property="TextColor" Value="White" />
+    </Style>
+    
+    <Style TargetType="ContentPage" ApplyToDerivedTypes="True">
+        <Setter Property="Background" Value="{StaticResource Background Vertical}" />
+        <Setter Property="NavigationPage.HasNavigationBar" Value="False" />
+    </Style>
+
+
+</ResourceDictionary>

@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<?xaml-comp compile="true" ?>
+<ResourceDictionary 
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <Color x:Key="Bunker">#131314</Color>
+    <Color x:Key="Woodsmoke">#151618</Color>
+    <Color x:Key="Shark">#202428</Color>
+    <Color x:Key="Vulcan">#22272A</Color>
+    <Color x:Key="Baltic Sea">#2c2F35</Color>
+    <Color x:Key="Mine Shaft">#34393F</Color>
+    <Color x:Key="Nevada">#6F7276</Color>
+    <Color x:Key="Silver Sand">#C2C3C5</Color>
+    <Color x:Key="White">#FFF</Color>
+    <Color x:Key="Torch Red">#F63434</Color>
+    <Color x:Key="Milano Red">#AA0A0A</Color>
+    <Color x:Key="Status Green">#38EF7D</Color>
+    <Color x:Key="Status Lemon">#FFE600</Color>
+    <Color x:Key="Status Blue">#38D9EF</Color>
+    <Color x:Key="Dodger Blue">#2F80ED</Color>
+    <Color x:Key="Moody Blue">#8F94FB</Color>
+    <Color x:Key="Amethyst">#A770EF</Color>
+    <Color x:Key="Deepsky Blue">#00C3FF</Color>
+    <Color x:Key="Citrus">#ADD100</Color>
+    <Color x:Key="Amber">#FFC700</Color>
+    <Color x:Key="Gold Drop">#F58319</Color>
+    <Color x:Key="Orange Red">#FC4A1A</Color>
+    <Color x:Key="Carnation">#F05053</Color>
+
+    <LinearGradientBrush x:Key="Background Vertical" StartPoint="0.5,0" EndPoint="0.5,1">
+        <GradientStop Color="{StaticResource Mine Shaft}" Offset="0" />
+        <GradientStop Color="{StaticResource Vulcan}" Offset="1" />
+    </LinearGradientBrush>
+
+    <LinearGradientBrush x:Key="Button Stroke Lateral" StartPoint="0.83,0.89" EndPoint="0.16,0.14">
+        <GradientStop Color="{StaticResource Bunker}" Offset="0" />
+        <GradientStop Color="{StaticResource Shark}" Offset="1" />
+    </LinearGradientBrush>
+
+    <LinearGradientBrush x:Key="Button Lateral" StartPoint="1,1" EndPoint="-0.27,0">
+        <GradientStop Color="{StaticResource Woodsmoke}" Offset="0" />
+        <GradientStop Color="{StaticResource Mine Shaft}" Offset="1" />
+    </LinearGradientBrush>
+
+    <LinearGradientBrush x:Key="Frame Vertical" StartPoint="0.19,1.13" EndPoint="0.2,-0.07">
+        <GradientStop Color="{StaticResource Woodsmoke}" Offset="0" />
+        <GradientStop Color="{StaticResource Shark}" Offset="1" />
+    </LinearGradientBrush>
+
+    <LinearGradientBrush x:Key="Stepper Pressed" StartPoint="-0.11,0.31" EndPoint="1.41,0.31">
+        <GradientStop Color="{StaticResource Woodsmoke}" Offset="0" />
+        <GradientStop Color="{StaticResource Mine Shaft}" Offset="1" />
+    </LinearGradientBrush>
+
+</ResourceDictionary>

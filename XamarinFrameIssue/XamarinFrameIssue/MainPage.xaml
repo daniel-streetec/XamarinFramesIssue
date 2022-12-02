@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:xamarinframeissue="clr-namespace:XamarinFrameIssue"
+             x:Class="XamarinFrameIssue.MainPage"
+             x:DataType="xamarinframeissue:MainPageViewModel"
+             xmlns:controls="clr-namespace:XamarinFrameIssue.Controls">
+
+    <StackLayout Margin="24" >
+        <Frame Background="{StaticResource Frame Vertical}">
+            <StackLayout Orientation="Horizontal" >
+                <Label Text="Toggle Visibility" VerticalOptions="Center" HorizontalOptions="StartAndExpand" />
+                <Switch IsToggled="{Binding Toggled}" HorizontalOptions="End" VerticalOptions="Center" />
+            </StackLayout>
+        </Frame>
+        <controls:CustomFrameBasedControl IsVisible="{Binding Toggled}" Title="FirstControl" />
+        <controls:CustomFrameBasedControl IsVisible="{Binding Toggled}" Title="SecondControl" />
+    </StackLayout>
+
+</ContentPage>
